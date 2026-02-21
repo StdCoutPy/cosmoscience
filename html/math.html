@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Математика</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<div class="top-section">
+    <div class="constellation-wrapper">
+        <!-- Левая часть: Колесо -->
+        <canvas id="constellationNav" width="450" height="450"></canvas>
+
+        <!-- Правая часть: Легенда -->
+        <div class="constellation-legend">
+            <div id="leg-0">0 — Главная</div> <!-- Новая строка -->
+            <div id="leg-1">1 — Математика</div>
+            <div id="leg-2">2 — Физика</div>
+            <div id="leg-3">3 — Информатика</div>
+            <div id="leg-4">4 — Вселенная</div>
+        </div>
+    </div>
+</div>
+
+<h1>📐 Математика — язык Вселенной</h1>
+
+<div class="container">
+
+    <div class="card">
+        <h2>🔥 Фрактал Мандельброта</h2>
+        <canvas id="fractalCanvas" width="550" height="300"></canvas>
+        <button id="startFractal">Сгенерировать фрактал</button>
+
+    </div>
+
+   <div class="card" style="font-family: sans-serif; text-align: center;">
+    <h2>🌀 Золотая спираль</h2>
+    <div class="interactive">
+        <input type="range" min="0" max="500" value="0" id="fibSlider" style="width: 300px;">
+        <br>
+        <canvas id="fibCanvas" width="500" height="400" style="background: #121212; border-radius: 8px; margin: 0px;"></canvas>
+        <br>
+        <button id="resetFib">Сбросить</button>
+    </div>
+</div>
+
+
+    <div class="famous">
+        <img src="../img/einstein.jpg">
+        <div class="desc"><b>Альберт Эйнштейн</b><br>Использовал математику для создания теории относительности.</div>
+    </div>
+
+</div>
+
+<script src="../js/main.js"></script>
+<script src="../js/interactive.js"></script>
+<script src="../js/main.js"></script>
+
+</body>
+</html>
